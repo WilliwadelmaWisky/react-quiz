@@ -1,7 +1,8 @@
 # Quiz app with React
 
-A quiz app
+A quiz app. Quiz is fetched from OpenTriviaDB.
 
 Packages
+- TypeScript
 - bootstrap
 - react-icons
