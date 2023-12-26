@@ -1,14 +1,15 @@
 interface Props {
     answer: string
     disabled: boolean
+    isCorrect: boolean
     onClick: () => void
 }
 
-const Answer = ({answer, disabled, onClick}: Props) => {
+const Answer = ({answer, disabled, isCorrect, onClick}: Props) => {
     return (
         <button 
             type="button" 
-            className="btn btn-primary"
+            className={disabled ? (isCorrect ? "btn btn-success" : "btn btn-danger") :"btn btn-primary"}
             disabled={disabled}
             onClick={onClick}
         >{answer}</button>
